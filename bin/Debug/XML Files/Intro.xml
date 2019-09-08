@@ -1,0 +1,13 @@
+﻿<Screen>
+	<Title>The End</Title>
+	<Exit Direction='South' Name='Highway 61' Text='Back the way we came.' Path='XML Files/The Way They Came.xml'>	
+	</Exit>
+	
+	<Text> 
+	   'The road you have followed for a year passed has reached an end
+	     
+	    at a dry canyon edge. The rules were to stay on the road, and now what? 
+	     
+	    The flowers have died, and soon, all of us too whatcha' gonna you do?'</Text>
+	<Picture Path = 'c:/development/quaker/bin/debug/images/test.png'/>
+</Screen>

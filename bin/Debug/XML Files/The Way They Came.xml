@@ -1,0 +1,13 @@
+<Screen>
+	<Title>The Way They Came</Title>
+	<Exit Direction='North' Name='The End' Text='The dead end...' Path='XML Files/intro.xml'>
+	</Exit>
+	<Exit Direction='West' Name='Plucky Joes Quarter Shack!' Text='Oh HELL yeah.' Path='XML Files/Plucky Joes.xml'>	
+	</Exit>
+	
+	<Text> 
+	   Goddam, has this continent gotten hotter since the last time we were here?
+	   You can smell plucky joes in the distance.
+	</Text>
+	<Picture Path = 'c:/development/quaker/bin/debug/images/The End.png'/>
+</Screen>

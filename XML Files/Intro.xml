@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Screen>
+	<Title>"Green Dolphin"</Title>
+	<Exits>
+		<Exit Direction="South" Name="Highway 61" 
+			Text="Back the way we came."/>
+	</Exits>
+	<Text> 
+    "The road you have followed for the past year has reached dry canyon edge\n
+		The rules were to stay on the road, and now what? \nThe flowers have died, and soon, all of us too.
+		\nThat shall you do?"
+    </Text>
+	<Picture Path = "images/test.png"/>
+</Screen>

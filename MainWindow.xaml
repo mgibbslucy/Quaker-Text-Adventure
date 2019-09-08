@@ -1,0 +1,27 @@
+﻿<Window x:Class="Quaker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:UserControls="clr-namespace:Quaker.Controls"
+        xmlns:ViewModels="clr-namespace:Quaker.ViewModels"
+        xmlns:xctk ="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:Quaker"
+        xmlns:ViewModels1="clr-namespace:Quaker.ViewModels"
+        mc:Ignorable="d"
+        Background="White"
+        Name="Quaker"
+        Title="MainWindow" Height="900" Width="700">
+
+    <!--
+        <UserControls:ImageSurface ImageLink="{Binding Path=ImageLink, Mode=TwoWay}"/>
+    </Window>-->
+    <Window.DataContext>
+        <ViewModels:ViewModel/>
+    </Window.DataContext>
+
+    <UserControls:ImageSurface OutputText="{Binding OutputText, Mode=TwoWay}"
+                               InputText="{Binding InputText, Mode=TwoWay}"
+                               Picture="{Binding Picture, Mode=TwoWay}"/>
+
+</Window>

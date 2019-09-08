@@ -1,0 +1,13 @@
+<Screen>
+	<Title>Plucky Joes</Title>
+	<Exit Direction='East' Name='The Way They Came' Text='Where Now?' Path='XML Files/The Way They Came.xml'>
+	</Exit>
+	<Text> 
+	   SSHEEEYYYOOOOT DANG! Them griddles be flyin at a million miles an hour
+	   (You had been a grease monster yourself, † Praise Be to Ronald † )
+	   
+	   A dude says : "Wanna buy a burger? 8 bucks!"
+	   
+	</Text>
+	<Picture Path = 'c:/development/quaker/bin/debug/images/Plucky Joes.png'/>
+</Screen>
