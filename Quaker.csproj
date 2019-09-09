@@ -79,6 +79,7 @@
     <Compile Include="Classes\Delegate.cs" />
     <Compile Include="Classes\Exit.cs" />
     <Compile Include="Classes\Room.cs" />
+    <Compile Include="Classes\Sound.cs" />
     <Compile Include="Classes\XMLHandler.cs" />
     <Compile Include="Controls\ImageSurface.xaml.cs">
       <DependentUpon>ImageSurface.xaml</DependentUpon>

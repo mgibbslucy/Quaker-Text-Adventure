@@ -11,7 +11,7 @@
         mc:Ignorable="d"
         Background="White"
         Name="Quaker"
-        Title="MainWindow" Height="900" Width="700">
+        Title="MainWindow" Height="900" Width="900">
 
     <!--
         <UserControls:ImageSurface ImageLink="{Binding Path=ImageLink, Mode=TwoWay}"/>
