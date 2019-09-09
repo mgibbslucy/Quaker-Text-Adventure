@@ -17,6 +17,8 @@ namespace Quaker.ViewModels
         private String picture = Directory.GetCurrentDirectory() + "\\Images\\test.png";
         private String outputText = "";
         private String inputText = "";
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+        
 
         public ViewModel()
         {
@@ -31,7 +33,15 @@ namespace Quaker.ViewModels
         public Room CurrentRoom
         {
             get => currentRoom;
-            set { currentRoom = value; OutputText = PopulateOutputText(); Picture = CurrentRoom.Picture;  OnPropertyChanged("CurrentRoom"); OnPropertyChanged("OutputText"); }
+            set
+            {
+                currentRoom = value;
+                OutputText = PopulateOutputText();
+                Picture = CurrentRoom.Picture;
+                player = new System.Media.SoundPlayer(CurrentRoom.Sounds[0].Path);
+                player.PlayLooping();
+                OnPropertyChanged("OutputText");
+            }
         }
         public XmlDictNodeList ExitList
         {
@@ -52,7 +62,11 @@ namespace Quaker.ViewModels
         public String InputText
         {
             get => inputText;
-            set { inputText = value; OnPropertyChanged("InputText"); }
+            set
+            {
+                inputText = value;
+                OnPropertyChanged("InputText");
+            }
         }
 
         #region private methods

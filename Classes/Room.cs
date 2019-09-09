@@ -12,6 +12,7 @@ namespace Quaker.Classes
     public class Room
     {
         List<Exit> exits = new List<Exit>();
+        List<Sound> sounds = new List<Sound>();
         String picture = (Directory.GetCurrentDirectory()+"\\Images\\test.png");
         String text = "NULL";
         String name = "NULL";
@@ -25,7 +26,6 @@ namespace Quaker.Classes
             temp.Path = "XMLFiles/textNext.XML";
             temp.Name = "Tomato Hut";
             temp.Text = "Wait, I've got it! You're a Libra. You're Jewish? Love your nails. Your place or mine?";
-
             
             Exits = new List<Exit>() { temp };
         }
@@ -33,6 +33,11 @@ namespace Quaker.Classes
         {
             get => exits;
             set { exits = value; RaisePropertyChanged("Exits"); }
+        }
+        public List<Sound> Sounds
+        {
+            get => sounds;
+            set { sounds = value; RaisePropertyChanged("Sounds"); }
         }
         public String Picture
         {

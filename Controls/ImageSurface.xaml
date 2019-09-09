@@ -8,25 +8,26 @@
              xmlns:local="clr-namespace:Quaker.Controls"
              mc:Ignorable="d" 
              Background="Black"
-             d:DesignHeight="500" d:DesignWidth="800">
+             d:DesignHeight="500" d:DesignWidth="1000">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="175"/>
             <ColumnDefinition Width="30"/>
-            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="600"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="220"/>
             <RowDefinition Height="220"/>
             <RowDefinition Height="250"/>
         </Grid.RowDefinitions>
-        
-        <Label Content="{Binding ElementName=Stuff,Path=OutputText}" Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3" FontSize="12" FontWeight="ExtraLight" FontFamily ="Times New Roman" VerticalAlignment="Top" Margin="30,10,0,0" Foreground="White"/>
+
+        <Label Content="Input:" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" Foreground="LightCoral" FontStyle="Italic" Margin="420,0,0,0"/>
+        <Label Content="{Binding ElementName=Stuff,Path=OutputText}" Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3" FontSize="27" FontWeight="UltraBlack" FontFamily ="file:\\\C:\Development\Quaker\bin\Debug\Fonts\#212 Queenie Sans" FontStyle="Italic" VerticalAlignment="Top" Margin="30,10,0,0" Foreground="SeaGreen"/>
         <TextBox Text="{Binding InputText, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="2" HorizontalAlignment="Right" Width="60" Margin="80,0,0,0" Height="30" VerticalAlignment="Center" TextAlignment="Center" Background="Beige">
             <TextBox.InputBindings>
                 <KeyBinding Command="{Binding InputHandleCommand}" Key="Return" />
             </TextBox.InputBindings>
         </TextBox>
-        <Image Source="{Binding ElementName=Stuff,Path=Picture}" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Image Source="{Binding ElementName=Stuff,Path=Picture}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,30,0,0" Width="250"/>
     </Grid>
 </UserControl>

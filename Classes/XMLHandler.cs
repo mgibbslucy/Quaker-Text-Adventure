@@ -15,7 +15,9 @@ namespace Quaker.Classes
         {
             XmlDictNode temp = new XmlDictNode(File.ReadAllText(path));
             currentRoom.Exits = new List<Exit>();
+            currentRoom.Sounds = new List<Sound>();
             var tempExit = new Exit();
+            Sound tempSound = new Sound();
 
             currentRoom.Picture = temp["Picture"].Attributes["Path"].Value;
 
@@ -30,9 +32,17 @@ namespace Quaker.Classes
                 tempExit = new Exit();
             }
 
+            foreach (var node in temp["Sound"])
+            {
+                tempSound.Type = node.Attributes["Type"].Value;
+                tempSound.Path = node.Text;
+
+                currentRoom.Sounds.Add(tempSound);
+                tempSound = new Sound();
+            }
+
             currentRoom.Name = temp["Title"].Text;
             currentRoom.Text = temp["Text"].Text;
-
 
             return currentRoom;
         }
