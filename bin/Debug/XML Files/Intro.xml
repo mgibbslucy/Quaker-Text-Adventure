@@ -1,5 +1,5 @@
 ﻿<Screen>
-	<Sound Type = 'Music' Name = 'Desert'>c:\development\quaker\bin\debug\Sounds\desert.wav</Sound>
+	<Sound Type = 'Music' Name = 'Desert'>c:\development\quaker-text-adventure\bin\debug\Sounds\desert.wav</Sound>
 	<Title>The End</Title>
 	<Exit Direction='South' Name='Highway 61' Text='Back the way we came.' Path='XML Files/The Way They Came.xml'>	
 	</Exit>
@@ -10,5 +10,5 @@
 at a dry canyon edge. The rules were to stay on the road, and now what? 
 	     
 The flowers have died, and soon, all of us too whatcha' gonna you do?'</Text>
-	<Picture Path = 'c:/development/quaker/bin/debug/images/test.png'/>
+	<Picture Path = 'c:/development/quaker-text-adventure/bin/debug/images/test.png'/>
 </Screen>

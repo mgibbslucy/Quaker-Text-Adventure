@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Development\Quaker\obj\Debug\
+C:\development\Quaker-Text-Adventure\obj\Debug\
 Quaker
 none
 false
 DEBUG;TRACE
-C:\Development\Quaker\App.xaml
+C:\development\Quaker-Text-Adventure\App.xaml
 2-1143228722
 
 13-856216922
-22-314716308
+22-1382983024
 Controls\ImageSurface.xaml;MainWindow.xaml;
 
 False

@@ -9,5 +9,5 @@
 	   A dude says : "Wanna buy a burger? 8 bucks!"
 	   
 	</Text>
-	<Picture Path = 'c:/development/quaker/bin/debug/images/Plucky Joes.png'/>
+	<Picture Path = 'c:/development/quaker-text-adventure/bin/debug/images/Plucky Joes.png'/>
 </Screen>

@@ -9,5 +9,5 @@
 	   Goddam, has this continent gotten hotter since the last time we were here?
 	   You can smell plucky joes in the distance.
 	</Text>
-	<Picture Path = 'c:/development/quaker/bin/debug/images/The End.png'/>
+	<Picture Path = 'c:/development/quaker-text-adventure/bin/debug/images/The End.png'/>
 </Screen>
